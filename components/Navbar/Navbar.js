@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
+import classes from "./Navbar.module.css";
+
 const Navbar = (props) => {
   return (
-    <nav>
+    <nav className={classes.navbar}>
       <Link href="#">Home</Link>
       <Link href="#">About Me</Link>
       <Link href="#">Posts</Link>

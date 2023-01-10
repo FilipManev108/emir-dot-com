@@ -1,0 +1,15 @@
+.navbar {
+  text-align: right;
+  padding: 0;
+  /* background-color: rgb(28, 89, 109); */
+}
+
+.navbar a {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+}
