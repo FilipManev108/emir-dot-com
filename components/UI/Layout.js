@@ -1,18 +1,21 @@
-import React, { Fragment } from "react";
-
+import React, { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
+
+
 import Navbar from "../navbar/Navbar";
-import Hero from "./Hero";
+import Hero from "../navbar/Hero";
 
 import classes from "./Layout.module.css";
 
 const Layout = (props) => {
+  // *[_type == 'author'] {
+  //   name, title, "image": image.asset->url
+  //   }[0]
   const router = useRouter();
-
   return (
     <Fragment>
-      <header className={classes.gutter} style={{ backgroundColor: `grey` }}>
+      <header className={classes.gutter}>
         <Navbar />
         {router.pathname == "/" && <Hero />}
       </header>
